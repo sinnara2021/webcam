@@ -18,7 +18,7 @@
    $(".led").click(function(){
     var p = $(this).attr('id'); // get id value (i.e. pin13, pin12, or pin11)
     // send HTTP GET request to the IP address with the parameter "pin" and value "p", then execute the function
-    $.get("http://192.168.219.103:80/", {pin:p}); // execute get request (아두이노 웹서버 IP 주소로 고쳐 준다)
+    $.get("http://192.168.0.10:80/", {pin:p}); // execute get request (아두이노 웹서버 IP 주소로 고쳐 준다)
    });
   });
  </script>
